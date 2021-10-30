@@ -1,0 +1,56 @@
+*{
+  margin: 0.5vw;
+  padding: 0,1vw;
+
+}
+body {
+    background-image: url('i9.jpg');
+  background-size: 100vw;
+}
+section {
+display: grid;
+grid-template-columns: repeat(2, 40vw);
+grid-template-rows: repeat(3, 15vh);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+  position: relative;
+  bottom: -30vh;
+  justify-content: center;
+  justify-items: center;
+}
+button {
+  height: 15vh;
+  width: 33vw;
+}
+#fol {
+	background-image: url('https://telegra.ph/file/c1e305d40cf49378a931d.jpg');
+	background-size: 105%;
+}
+#lm {
+	background-image: url('https://telegra.ph/file/2aa299798b9cafb45af6a.jpg');
+	background-size: 105%;
+}
+#gbd {
+	background-image: url('https://telegra.ph/file/9f8bf4def4cd703461bee.jpg');
+	background-size: 105%;
+}
+#fh {
+	background-image: url('https://telegra.ph/file/f4c9c5f63a4dedbfbe063.jpg');
+	background-size: 100%;
+}
+#iso {
+	background-image: url('https://telegra.ph/file/83ffdc27f781f46327347.jpg');
+	background-size: 105%;
+}
+#par {
+	background-image: url('https://telegra.ph/file/ea1e1e92b3e32ed33d082.jpg');
+	background-size: 100%;
+}
+#imagen {
+	width: 40vw;
+	opacity: 0.7;
+}
+.imagen {
+	position: absolute;
+	left: 30vw;
+}

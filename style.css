@@ -1,0 +1,13 @@
+*{
+	padding: 1.4vw;
+}
+body {
+	justify-items: center;
+	background-color:rgb(103,59,183) ;
+}
+iframe {
+	width: 90vw;
+	height: 86vh;
+	background-color: rgb(103,59,183);
+	border: none;
+}
