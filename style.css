@@ -11,3 +11,22 @@ iframe {
 	background-color: rgb(103,59,183);
 	border: none;
 }
+a {
+	position: absolute;
+	top: 5vh;
+	right: 8.2vw;
+	background-color: transparent;
+	border: 0.5px dashed  rgb(100,60,180);
+	width: 17vw;
+	height: 17vw;
+}
+a {
+	justify-items: center;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+a img {
+	width: 17vw;
+	height: 17vw;
+}
