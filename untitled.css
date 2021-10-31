@@ -7,6 +7,145 @@ body {
     background-image: url('https://telegra.ph/file/69312aae60fbe35609d7d.jpg');
   background-size: 100vw;
 }
+#stars
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: url(bg2.jpg);
+	background-size: cover;
+	background-position-x: center;
+	animation: animateBg 50s linear infinite;
+}
+@keyframes animateBg
+{
+	0%,100%
+	{
+		transform: scale(1);
+	}
+	50%
+	{
+		transform: scale(1.2);
+	}
+}
+#stars span
+{
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px rgba(255,255,255,.1),
+				0 0 0 8px rgba(255,255,255,.1),
+				0 0 20px rgba(255,255,255,1);
+	animation: animate 3s linear infinite;
+}
+#stars span:before
+{
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 300px;
+	height: 1px;
+	background: linear-gradient(90deg,#fff,transparent);
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: rotate(-45deg) translateX(0);
+	}
+	70%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		transform: rotate(-45deg) translateX(-1000px);
+		opacity: 0;
+	}
+}
+#stars span:nth-child(1)
+{
+	top: 0px;
+	right: 0px;
+	animation-delay: 0;
+	animation-duration: 1s;
+}
+#stars span:nth-child(2)
+{
+	top: 0px;
+	right: 80px;
+	animation-delay: 0.2s;
+	animation-duration: 3s;
+}
+span:nth-child(3)
+{
+	top: 80px;
+	right: 0px;
+	animation-delay: 0.4s;
+	animation-duration: 2s;
+}
+#stars span:nth-child(4)
+{
+	top: 0px;
+	right: 180px;
+	animation-delay: 0.6s;
+	animation-duration: 1.5s;
+}
+#stars span:nth-child(5)
+{
+	top: 0px;
+	right: 400px;
+	animation-delay: 0.8s;
+	animation-duration: 2.5s;
+}
+#stars span:nth-child(6)
+{
+	top: 0px;
+	right: 600px;
+	animation-delay: 1s;
+	animation-duration: 3s;
+}
+#stars span:nth-child(7)
+{
+	top: 300px;
+	right: 0px;
+	animation-delay: 1.2s;
+	animation-duration: 1.75s;
+}
+#stars span:nth-child(8)
+{
+	top: 0px;
+	right: 700px;
+	animation-delay: 1.4s;
+	animation-duration: 1.25s;
+}
+#stars span:nth-child(9)
+{
+	top: 0px;
+	right: 1000px;
+	animation-delay: 0.75s;
+	animation-duration: 2.25s;
+}
+#stars span:nth-child(10)
+{
+	top: 0px;
+	right: 450px;
+	animation-delay: 2.75s;
+	animation-duration: 2.25s;
+}
+#stars span:nth-child(11)
+{
+	top: 500px;
+	right: 20px;
+	animation-delay: 1s;
+	animation-duration: 3.25s;
+}
+/*aqui empieza la real section*/
 section {
 display: grid;
 grid-template-columns: repeat(2, 40vw);
@@ -21,30 +160,54 @@ grid-row-gap: 20px;
 button {
   height: 15vh;
   width: 33vw;
+  border-style: /*dotted dashed*/ solid double;
+  border-color: red blue;
+  border-radius: 2px;
+}
+button:hover {
+	animation: boton 0.5s linear;
+}
+@keyframes boton {
+	0% {
+		width: 33vw;
+		height: 15vh;
+		
+	}
+	100% {
+		width: 50vw;
+		height: 23vh;
+		
+	}
 }
 #fol {
 	background-image: url('https://telegra.ph/file/78848458ebd7b7180d677.jpg');
 	background-size: 105%;
+	z-index: 100;
 }
 #lm {
 	background-image: url('https://telegra.ph/file/adffdea9e5edffc496728.jpg');
 	background-size: 105%;
+	z-index: 95;
 }
 #gbd {
 	background-image: url('https://telegra.ph/file/4d28686008d16a679f5c7.jpg');
 	background-size: 105%;
+	z-index: 85;
 }
 #fh {
 	background-image: url('https://telegra.ph/file/df0c7f5b2fee62e035921.jpg');
 	background-size: 100%;
+	z-index: 65;
 }
 #iso {
 	background-image: url('https://telegra.ph/file/465de0cab27cf69fd0d56.jpg');
 	background-size: 105%;
+	z-index: 80;
 }
 #par {
 	background-image: url('https://telegra.ph/file/460c723f43339d7d183a6.jpg');
 	background-size: 100%;
+	z-index: 90;
 }
 #imagen {
 	width: 40vw;
